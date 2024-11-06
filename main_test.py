@@ -25,13 +25,13 @@ def test_main_2():
     numbers = main.split(numbers)
 
     start = 0
-    for i in range(cnt):
-        try:
-            pivotidx = numbers.index(pivot, start)
-        except:
-            print('Value error: Not found the pivot element')
-            assert False
-        start = pivotidx + 1
+    # for i in range(cnt):
+    try:
+        pivotidx = numbers.index(pivot, start)
+    except:
+        print('Value error: Not found the pivot element')
+        assert False
+    # start = pivotidx + 1
     print('pivot idx', pivotidx)
 
     print('After split()', numbers)
